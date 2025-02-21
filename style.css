@@ -1,0 +1,359 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  border-radius: 12px; /* Sudut melengkung */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+      radial-gradient(circle, rgba(0, 0, 0, 0.1) 1.5px, transparent 1px);
+  -webkit-mask-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background-size: 10px 10px;
+  background-repeat: none;
+  background-blend-mode: normal;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 10; /* Memastikan konten berada di atas pola titik */
+}
+
+.image-medal {
+  position: relative;
+  margin-top: 5px;
+  margin-right: -24px;
+  margin-bottom: -20px;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  justify-content: flex-end;
+  text-align: left;
+  left: 0;
+}
+
+.timeline-item.right {
+  justify-content: flex-start;
+  text-align: left;
+  left: 50%;
+}
+
+.timeline-item-midmonth {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item-midmonth.left {
+  justify-content: flex-end;
+  text-align: left;
+  left: 0;
+}
+
+.timeline-item-midmonth.right {
+  justify-content: flex-start;
+  text-align: left;
+  left: 50%;
+}
+
+.timeline-item-double {
+  display: flex;
+  align-items: center;
+  margin: -10;
+  margin-top: -50px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item-double.left {
+  justify-content: flex-end;
+  text-align: left;
+  left: 0;
+}
+
+.timeline-month {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: orange; /* Latar belakang agar teks terlihat jelas */
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: bold;
+  color: #333;
+  z-index: 10; /* Pastikan berada di atas elemen lainnya */
+}
+
+.timeline-label {
+  position: absolute;
+  top: auto; /* Pastikan tidak diatur dengan 'top' */
+  bottom: 0px; /* Letakkan di bawah garis timeline */
+  left: 50%; /* Posisikan di tengah garis */
+  transform: translate(-50%, 50%);
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: bold;
+  color: #333;
+  z-index: 10; /* Pastikan berada di atas elemen lainnya */
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-date .dot {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: -10;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20;
+}
+
+.organized {
+  transform: translateY(-100px);
+}
+
+.company-name {
+  margin-top: -200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.footer-left {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.footer-left h4 {
+  font-size: 16px;
+}
+
+.footer-left p {
+  font-size: 11.5px;
+  color: #555;
+}
+
+/* Right Section Styling */
+.footer-right {
+  justify-content: flex-start;
+  text-align: left;
+  left: 50%;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icon:hover {
+  background-color: #007bff;
+}
+
+.information {
+  margin-right: -50px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Menjaga ikon dan teks sejajar */
+  gap: 8px; /* Memberi jarak antara ikon dan teks */
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.contact-item img {
+  height: 15px;
+  width: 15px;
+}
+
+/*
+.faq-container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.faq-toggle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease; /* Animasi rotasi
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Transisi smooth untuk membuka/menutup
+  font-size: 14px;
+  color: #555;
+  padding-left: 24px;
+}
+
+.faq-answer p {
+  margin: 10px 0;
+}
+
+.faq.open .faq-toggle {
+  transform: rotate(45deg); /* Tanda '+' menjadi 'x' (atau '-')
+}
+
+.faq.open .faq-answer {
+  max-height: 150px; /* Sesuaikan tinggi maksimum jawaban
+}
+*/
+
+
+
+
+.faq-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .faq-icon {
+  font-size: 1.2em;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.faq-answer.open {
+  max-height: 200px; /* Sesuaikan dengan tinggi maksimal jawaban */
+  padding: 15px;
+}
