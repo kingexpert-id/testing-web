@@ -23,31 +23,41 @@ function toggleFAQ(selectedQuestion) {
 
 
 // Script untuk Smooth Scroll dan Efek Muncul
-        // Smooth Scroll
+
+// Smooth Scroll
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+
+        // Cek apakah link mengarah ke anchor di halaman yang sama
+        if (href.startsWith("#")) {
+            e.preventDefault(); // Mencegah navigasi untuk anchor link
+            const target = document.querySelector(href);
+            if (target) {
                 window.scrollTo({
                     top: target.offsetTop - 110, // Jarak dari navigasi
                     behavior: 'smooth'
                 });
-            });
-        });
-        // Intersection Observer untuk memantau elemen
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Tambahkan kelas 'visible' saat elemen masuk viewport
-                    entry.target.classList.add('visible');
-                } else {
-                    // Hapus kelas 'visible' saat elemen keluar viewport
-                    entry.target.classList.remove('visible');
-                }
-            });
-        });
+            }
+        }
+        // Jika link mengarah ke halaman lain, biarkan perilaku default
+    });
+});
 
-        // Amati semua elemen <section>
+// Intersection Observer untuk memantau elemen
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Tambahkan kelas 'visible' saat elemen masuk viewport
+            entry.target.classList.add('visible');
+        } else {
+            // Hapus kelas 'visible' saat elemen keluar viewport
+            entry.target.classList.remove('visible');
+        }
+    });
+});
+
+// Amati semua elemen <section>
 document.querySelectorAll('section').forEach((section) => {
-            observer.observe(section);
-        });
+    observer.observe(section);
+});
