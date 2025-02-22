@@ -23,6 +23,10 @@ body {
     text-align: center;
 }
 
+.jjg-cbg {
+  margin-bottom: -50px;
+}
+
 .card-hero {
   margin-top: -70px;
   padding-top: 130px;
@@ -248,12 +252,13 @@ section {
   margin: 20;
 }
 
-.organized {
-  transform: translateY(-100px);
+.support-by {
+  transform: translateY(-40px);
+  margin-bottom: -80px;
 }
 
-.company-name {
-  margin-top: -200px;
+.organized {
+  transform: translateY(-20px);
 }
 
 .footer {
