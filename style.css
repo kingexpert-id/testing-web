@@ -7,6 +7,58 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Full width section */
+.hero-section {
+    height: 100vh;
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    padding: 60px 20px; /* Padding untuk memberi ruang di dalam */
+    background-color: #f9f9f9; /* Atau warna sesuai desain */
+}
+
+/* Konten di dalam section */
+.hero-content {
+    max-width: 80%; /* Membatasi lebar konten agar tidak terlalu lebar */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-hero {
+  margin-top: -70px;
+  padding-top: 130px;
+  padding-inline: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+      radial-gradient(circle, rgba(0, 0, 0, 0.5) 1.5px, transparent 1px);
+  -webkit-mask-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  mask-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  background-size: 10px 10px;
+  background-repeat: none;
+  background-blend-mode: normal;
+  background-color: #74a7ff; /* Base color */
+  color: #fff;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.card-content-hero {
+  position: relative;
+  z-index: 10; /* Memastikan konten berada di atas pola titik */
+}
+
 section {
   margin: 40px 0;
   padding: 20px;
@@ -206,6 +258,7 @@ section {
 
 .footer {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   margin-top: -30px;
