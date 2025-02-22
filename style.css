@@ -9,7 +9,7 @@ body {
 
 /* Full width section */
 .hero-section {
-    height: 100vh;
+    height: auto;
     width: 100vw; /* Full viewport width */
     margin: 0;
     padding: 60px 20px; /* Padding untuk memberi ruang di dalam */
