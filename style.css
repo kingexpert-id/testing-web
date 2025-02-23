@@ -71,6 +71,10 @@ section {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+.container {
+  max-width: 70%;
+}
+
 .visible {
   opacity: 1;
   transform: translateY(0);
