@@ -64,7 +64,7 @@ body {
 }
 
 section {
-  width: 100vw;
+  width: auto;
   margin: 40px 0;
   padding: 20px;
   opacity: 0;
@@ -72,9 +72,7 @@ section {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.container {
-  max-width: 70%;
-}
+
 
 .visible {
   opacity: 1;
