@@ -64,7 +64,8 @@ body {
 }
 
 section {
-  margin: 40px 0;
+  width: 100vw;
+  margin: 0;
   padding: 20px;
   opacity: 0;
   transform: translateY(50px);
