@@ -61,4 +61,16 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach((section) => {
     observer.observe(section);
 });
-9
+
+
+
+
+// Muat footer.html ke dalam div #footer
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Gagal memuat footer:', error));
+
+
