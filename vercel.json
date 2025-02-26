@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/informasi", "destination": "/informasi.html" },
+    { "source": "/unduh", "destination": "/unduh.html" },
+    { "source": "/faq", "destination": "/faq.html" }
+  ]
+}
