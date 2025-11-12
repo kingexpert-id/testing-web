@@ -3,7 +3,6 @@
     <link rel="icon" href="logo/kesc_logo.png">
     <title>King Expert Science Competition 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -37,12 +36,13 @@
         <div class="bg-white p-6 rounded-2xl shadow-lg max-w-3xl mx-auto">
             <div class="space-y-4">
 
-                <!-- Q1 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        1. Apa saja persyaratan yang dibutuhkan saat mendaftar KESC 2026?
+                <!-- Template FAQ -->
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold focus:outline-none">
+                        <span>1. Apa saja persyaratan yang dibutuhkan saat mendaftar KESC 2026?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
                         <ul class="list-disc list-inside">
                             <li>Pas foto ukuran 3x4 cm (1 buah)</li>
                             <li>Kartu Siswa atau surat dari sekolah yang mencantumkan NISN</li>
@@ -52,23 +52,23 @@
                     </div>
                 </div>
 
-                <!-- Q2 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        2. Apakah lomba ini terbuka untuk umum?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>2. Apakah lomba ini terbuka untuk umum?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        Ya, KESC 2026 terbuka untuk umum dan bisa diikuti oleh pelajar jenjang SD, SMP, hingga SMA dari seluruh Indonesia.
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        Ya, KESC 2026 terbuka untuk umum dan bisa diikuti oleh pelajar SD, SMP, dan SMA sederajat dari seluruh Indonesia.
                     </div>
                 </div>
 
-                <!-- Q3 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        3. Apakah ada batasan usia untuk peserta?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>3. Apakah ada batasan usia untuk peserta?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        Terbuka untuk:
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        KESC terbuka untuk:
                         <ul class="list-disc list-inside">
                             <li>SD kelas 3–6</li>
                             <li>SMP kelas 7–9</li>
@@ -77,74 +77,72 @@
                     </div>
                 </div>
 
-                <!-- Q4 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        4. Apakah ada biaya pendaftaran?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>4. Apakah ada biaya pendaftaran?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
                         Ya, biaya pendaftaran sebesar <b>Rp100.000 per peserta per bidang lomba</b>.
                     </div>
                 </div>
 
-                <!-- Q5 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        5. Kapan batas waktu pendaftaran?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>5. Kapan batas waktu pendaftaran?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        Pendaftaran dibuka dari <b>17 November 2025</b> hingga <b>14 Januari 2026</b>.  
-                        Pastikan kamu mendaftar sebelum tenggat waktu, ya!
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        Pendaftaran dibuka dari <b>17 November 2025</b> hingga <b>14 Januari 2026</b>.
                     </div>
                 </div>
 
-                <!-- Q6 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        6. Apakah terdapat biaya tambahan seperti ongkos kirim hadiah atau sertifikat?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>6. Apakah ada biaya tambahan?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        Tidak ada biaya tambahan. Biaya pengiriman hadiah dan sertifikat akan ditanggung oleh panitia KESC 2026.
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        Tidak ada biaya tambahan. Ongkos kirim hadiah dan sertifikat ditanggung panitia KESC 2026.
                     </div>
                 </div>
 
-                <!-- Q7 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        7. Apakah lomba ini diadakan secara online atau offline?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>7. Apakah lomba diadakan online atau offline?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        KESC 2026 diselenggarakan dengan sistem <b>hybrid</b>.  
-                        Peserta dapat mengikuti ujian secara <b>online</b> atau <b>offline di lokasi mitra KESC</b> terdekat, dengan pengawasan utama melalui Zoom Meeting.
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        KESC 2026 diselenggarakan dengan sistem <b>hybrid</b> (online dan offline di lokasi mitra KESC).
                     </div>
                 </div>
 
-                <!-- Q8 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        8. Apakah ada hadiah untuk pemenang?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>8. Apakah ada hadiah untuk pemenang?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
                         Ya, hadiah untuk pemenang berupa:
                         <ul class="list-disc list-inside">
-                            <li>Uang tunai bagi peraih nilai terbaik di setiap bidang</li>
-                            <li>Medali dan sertifikat fisik untuk juara 1, 2, dan 3</li>
-                            <li>E-Sertifikat untuk seluruh peserta</li>
+                            <li>Uang tunai bagi peraih nilai terbaik</li>
+                            <li>Medali dan sertifikat fisik untuk juara 1, 2, 3</li>
+                            <li>E-Sertifikat untuk semua peserta</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Q9 -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-800 font-semibold" onclick="toggleFAQ(this)">
-                        9. Jika ada kendala, saya harus menghubungi siapa?
+                <div class="faq-item border-b">
+                    <button class="faq-question w-full flex justify-between items-center py-4 text-gray-800 font-semibold">
+                        <span>9. Siapa yang bisa dihubungi jika ada kendala?</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform"></i>
                     </button>
-                    <div class="hidden text-gray-600 pb-4">
-                        Kamu dapat menghubungi kontak resmi panitia:
-                        <ul class="list-none list-inside mt-2">
-                            <li>📞 <b>Admin KESC 1:</b> 0851-8321-3414</li>
-                            <li>📞 <b>Admin KESC 2:</b> 0897-9080-001</li>
-                            <li>📸 <b>Instagram:</b> <a href="https://instagram.com/kesc.id" target="_blank" class="text-blue-600 hover:underline">@kesc.id</a></li>
+                    <div class="faq-answer hidden text-gray-600 pb-4 pl-2">
+                        Hubungi panitia resmi:
+                        <ul class="list-none list-inside">
+                            <li>📞 Admin 1: 0851-8321-3414</li>
+                            <li>📞 Admin 2: 0897-9080-001</li>
+                            <li>📸 Instagram: <a href="https://instagram.com/kesc.id" class="text-blue-600 hover:underline">@kesc.id</a></li>
                         </ul>
                     </div>
                 </div>
@@ -157,11 +155,26 @@
 <!-- Footer -->
 <div id="footer"></div>
 
+<!-- JS untuk Toggle FAQ -->
 <script>
-function toggleFAQ(button) {
-    const answer = button.nextElementSibling;
-    answer.classList.toggle("hidden");
-}
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('i');
+
+        // Tutup semua FAQ lain
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+            if (ans !== answer) ans.classList.add('hidden');
+        });
+        document.querySelectorAll('.faq-question i').forEach(ic => {
+            if (ic !== icon) ic.classList.remove('rotate-180');
+        });
+
+        // Toggle FAQ aktif
+        answer.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+    });
+});
 </script>
 
 </body>
