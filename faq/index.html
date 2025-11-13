@@ -1,149 +1,159 @@
 <html>
+
 <head>
     <link rel="icon" href="logo/kesc_logo.png">
     <title>King Expert Science Competition 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
     <link href="style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body class="bg-gray-50">
-<!-- Menu Navigasi -->
-<nav class="sticky top-5 bg-white shadow-lg mx-auto lg:w-full lg:max-w-4xl rounded-full z-50 border border-blue-200">
-    <div class="px-6 py-3 flex justify-between items-center">
-        <!-- Logo dan Teks -->
-        <a href="/" class="flex items-center space-x-0 smooth-scroll">
-            <img src="logo/kesc_logo.png" alt="KESC Logo" class="h-10 w-auto">
-            <div class="leading-tight flex flex-col">
-                <span class="block text-[14.3px] font-bold text-blue-800">King Expert</span>
-                <span class="block text-[8px] font-bold text-gray-40">Science Competition</span>
+    <!-- Menu Navigasi -->
+    <nav
+        class="sticky top-5 bg-white shadow-lg mx-auto lg:w-full lg:max-w-4xl rounded-full z-50 border border-blue-200">
+        <div class="px-6 py-3 flex justify-between items-center">
+            <!-- Logo dan Teks -->
+            <a href="/" class="flex items-center space-x-0 smooth-scroll">
+                <img src="../logo/kesc_logo.png" alt="KESC Logo" class="h-10 w-auto">
+                <div class="leading-tight flex flex-col">
+                    <span class="block text-[14.3px] font-bold text-blue-800">King Expert</span>
+                    <span class="block text-[8px] font-bold text-gray-40">Science Competition</span>
+                </div>
+            </a>
+            <!-- Menu Navigasi -->
+            <div class="flex mx-10 space-x-10 lg:space-x-20">
+                <a href="/" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Beranda</a>
+                <a href="/informasi"
+                    class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Informasi</a>
+                <a href="/unduh" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Unduh</a>
+                <a href="/faq" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">FAQ</a>
             </div>
-        </a>
-        <!-- Menu Navigasi -->
-        <div class="flex mx-10 space-x-10 lg:space-x-20">
-            <a href="/" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Beranda</a>
-            <a href="/informasi" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Informasi</a>
-            <a href="/unduh" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">Unduh</a>
-            <a href="/faq" class="text-sm font-bold text-gray-800 hover:text-blue-500 smooth-scroll">FAQ</a>
+            <!-- Tombol Pendaftaran -->
+            <a href="/registrasi" class="text-sm text-white bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-800">Daftar
+                KESC 2026</a>
         </div>
-        <!-- Tombol Pendaftaran -->
-        <a href="/registrasi" class="text-sm text-white bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-800">Daftar KESC 2026</a>
-    </div>
-</nav>
+    </nav>
 
-<main>
-    <!-- FAQ -->
-    <section id="faq" class="my-12">
-        <h2 class="text-2xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
-        <div class="bg-white p-6 rounded shadow">
-            <div class="space-y-4">
+    <main>
+        <!-- FAQ -->
+        <section id="faq" class="my-12">
+            <h2 class="text-2xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <div class="space-y-4">
 
-                <!-- FAQ ITEMS -->
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apa saja persyaratan yang dibutuhkan saat mendaftar KESC 2026?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        • Pas Foto ukuran 3x4 cm sebanyak 1 buah.<br>
-                        • Kartu Siswa atau surat dari sekolah yang mencantumkan NISN (salah satu saja).<br>
-                        • Bukti transfer pendaftaran peserta.<br>
-                        • Email & WhatsApp aktif untuk komunikasi lanjutan.
+                    <!-- FAQ ITEMS -->
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apa saja persyaratan yang dibutuhkan saat mendaftar KESC 2026?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            • Pas Foto ukuran 3x4 cm sebanyak 1 buah.<br>
+                            • Kartu Siswa atau surat dari sekolah yang mencantumkan NISN (salah satu saja).<br>
+                            • Bukti transfer pendaftaran peserta.<br>
+                            • Email & WhatsApp aktif untuk komunikasi lanjutan.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apakah lomba ini terbuka untuk umum?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Ya, KESC 2026 terbuka untuk umum dan dapat diikuti oleh siswa SD, SMP, dan SMA/sederajat dari seluruh Indonesia.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apakah lomba ini terbuka untuk umum?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Ya, KESC 2026 terbuka untuk umum dan dapat diikuti oleh siswa SD, SMP, dan SMA/sederajat
+                            dari seluruh Indonesia.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apakah ada batasan usia untuk peserta?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Terbuka untuk pelajar SD kelas 3–6, SMP kelas 7–9, dan SMA kelas 10–12. Pastikan kamu sudah masuk salah satu jenjang tersebut.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apakah ada batasan usia untuk peserta?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Terbuka untuk pelajar SD kelas 3–6, SMP kelas 7–9, dan SMA kelas 10–12. Pastikan kamu sudah
+                            masuk salah satu jenjang tersebut.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apakah ada biaya pendaftaran?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Ya, terdapat biaya pendaftaran sebesar <b>Rp 100.000/siswa</b> per bidang lomba.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apakah ada biaya pendaftaran?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Ya, terdapat biaya pendaftaran sebesar <b>Rp 100.000/siswa</b> per bidang lomba.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Kapan batas waktu pendaftaran?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Pendaftaran dibuka pada <b>17 November 2025</b> dan ditutup pada <b>14 Januari 2026</b>.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Kapan batas waktu pendaftaran?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Pendaftaran dibuka pada <b>17 November 2025</b> dan ditutup pada <b>14 Januari 2026</b>.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apakah lomba ini diadakan secara online atau offline?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        KESC 2026 diselenggarakan secara hybrid (online & offline). Peserta dapat memilih lokasi ujian di mitra KESC atau mengikuti secara daring melalui Zoom Meeting.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apakah lomba ini diadakan secara online atau offline?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            KESC 2026 diselenggarakan secara hybrid (online & offline). Peserta dapat memilih lokasi
+                            ujian di mitra KESC atau mengikuti secara daring melalui Zoom Meeting.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Apakah ada hadiah untuk pemenang?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Ya, tersedia hadiah:<br>
-                        • Uang tunai untuk peraih nilai terbaik di tiap bidang.<br>
-                        • Medali & Sertifikat fisik (Juara 1, 2, 3).<br>
-                        • E-Sertifikat untuk semua peserta.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Apakah ada hadiah untuk pemenang?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Ya, tersedia hadiah:<br>
+                            • Uang tunai untuk peraih nilai terbaik di tiap bidang.<br>
+                            • Medali & Sertifikat fisik (Juara 1, 2, 3).<br>
+                            • E-Sertifikat untuk semua peserta.
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-b">
-                    <button class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
-                        Jika ada kendala, saya harus menghubungi siapa?
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-answer hidden text-gray-600 pb-4">
-                        Hubungi:<br>
-                        • Admin 1: <b>0851-8321-3414</b><br>
-                        • Admin 2: <b>0897-9080-001</b><br>
-                        Atau kunjungi Instagram <a href="https://instagram.com/kesc.id" target="_blank" class="text-blue-600 hover:underline">@kesc.id</a>.
+                    <div class="border-b">
+                        <button
+                            class="w-full text-left py-4 text-gray-700 font-semibold flex justify-between items-center faq-toggle">
+                            Jika ada kendala, saya harus menghubungi siapa?
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden text-gray-600 pb-4">
+                            Hubungi:<br>
+                            • Admin 1: <b>0851-8321-3414</b><br>
+                            • Admin 2: <b>0897-9080-001</b><br>
+                            Atau kunjungi Instagram <a href="https://instagram.com/kesc.id" target="_blank"
+                                class="text-blue-600 hover:underline">@kesc.id</a>.
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<!-- Script FAQ fix -->
-<script>
-function toggleFAQ(button) {
-    const content = button.nextElementSibling;
-    content.classList.toggle("hidden");
-}
-</script>
-
-<!-- Footer -->
-<div id="footer"></div>
+    <!-- Script FAQ fix -->
+    <!-- Footer -->
+    <div id="footer"></div>
 </body>
+
 </html>
